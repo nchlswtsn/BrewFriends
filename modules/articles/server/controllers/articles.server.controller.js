@@ -40,7 +40,10 @@ exports.update = function (req, res) {
   var article = req.article;
 
   article.title = req.body.title;
-  article.content = req.body.content;
+  article.type = req.body.type;
+  article.quantity = req.body.quantity;
+  article.available = req.body.available;
+  article.image = req.body.image;
 
   article.save(function (err) {
     if (err) {

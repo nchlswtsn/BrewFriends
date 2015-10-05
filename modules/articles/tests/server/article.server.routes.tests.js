@@ -47,7 +47,10 @@ describe('Article CRUD tests', function () {
     user.save(function () {
       article = {
         title: 'Article Title',
-        content: 'Article Content'
+        type: 'Article Content',
+        quantity: 'Article Content',
+        available: 'Article Content',
+        image: 'Article Content'
       };
 
       done();

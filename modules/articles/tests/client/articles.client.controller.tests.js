@@ -53,7 +53,10 @@
       mockArticle = new Articles({
         _id: '525a8422f6d0f87f0e407a33',
         title: 'An Article about MEAN',
-        content: 'MEAN rocks!'
+        type: 'MEAN rocks!',
+        quantity: 3,
+        available: true,
+        image: 'MEAN rocks!'
       });
 
       // Mock logged in user
@@ -104,12 +107,18 @@
         // Create a sample article object
         sampleArticlePostData = new Articles({
           title: 'An Article about MEAN',
-          content: 'MEAN rocks!'
+          type: 'MEAN rocks!'
+          quantity: 'MEAN rocks!'
+          available: 'MEAN rocks!'
+          image: 'MEAN rocks!'
         });
 
         // Fixture mock form input values
         scope.title = 'An Article about MEAN';
-        scope.content = 'MEAN rocks!';
+        scope.type = 'MEAN rocks!';
+        scope.quantity = 'MEAN rocks!';
+        scope.available = 'MEAN rocks!';
+        scope.image = 'MEAN rocks!';
 
         spyOn($location, 'path');
       });

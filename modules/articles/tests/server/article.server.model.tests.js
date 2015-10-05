@@ -30,7 +30,10 @@ describe('Article Model Unit Tests:', function () {
     user.save(function () {
       article = new Article({
         title: 'Article Title',
-        content: 'Article Content',
+        type: 'Article Type',
+        quantity: 'Article Content',
+        available: 'Article Content',
+        image: 'Article Content',
         user: user
       });
 

@@ -21,9 +21,21 @@ angular.module('articles').config(['$stateProvider',
         url: '/create',
         templateUrl: 'modules/articles/views/create-article.client.view.html'
       })
+      .state('articles.market', {
+        url: '/market',
+        templateUrl: 'modules/articles/views/market-article.client.view.html'
+      })
+      .state('articles.trade', {
+        url: '/trade',
+        templateUrl: 'modules/articles/views/trade-article.client.view.html'
+      })
       .state('articles.view', {
         url: '/:articleId',
         templateUrl: 'modules/articles/views/view-article.client.view.html'
+      })
+      .state('articles.market-view', {
+        url: '/:articleId',
+        templateUrl: 'modules/articles/views/market-view-article.client.view.html'
       })
       .state('articles.edit', {
         url: '/:articleId/edit',
